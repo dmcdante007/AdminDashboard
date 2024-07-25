@@ -7,7 +7,7 @@ import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
+// import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
@@ -23,7 +23,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
     <MenuItem
       active={selected === title}
-      style={{ color: colors.grey[900] }}
+      style={{ color: colors.grey[100] }}
       onClick={() => setSelected(title)}
       icon={icon}
     >
@@ -56,7 +56,7 @@ const SideBar = () => {
         },
         "& .pro-menu-item.active": {
           color: "6870fa !important",
-        },
+        }
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -77,7 +77,7 @@ const SideBar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[900]}>
+                <Typography variant="h3" color={colors.grey[100]}>
                   ADMINIS
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -102,11 +102,11 @@ const SideBar = () => {
               <Box textAlign="center">
                 <Typography
                   variant="h2"
-                  color={colors.grey[900]}
+                  color={colors.grey[100]}
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Dante
                 </Typography>
 
                 <Typography variant="h5" color={colors.greenAccent[500]}>
