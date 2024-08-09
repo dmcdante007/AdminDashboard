@@ -37,7 +37,7 @@ const Form = () => {
     <Box m="20px">
       <Header title="CREATE USER" subtitle="Create a New User Profile" />
 
-      <Formik
+      {/* <Formik
         onSubmit={handleFormSubmit}
         initialValues={initialValues}
         validationSchema={userSchema}
@@ -132,7 +132,7 @@ const Form = () => {
             </Box>
           </form>;
         }}
-      </Formik>
+      </Formik> */}
     </Box>
   );
 };
